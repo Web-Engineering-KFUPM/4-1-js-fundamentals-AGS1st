@@ -39,7 +39,9 @@ console.log("x % y = ",x%y);
 // Task 3.2 — number vs string
 // Display results of "2" + 3, 2 + "3", and 2 + 3. Add a short comment: why do the first two concatenate?
 // write code here
-
+console.log("'2' + 3 =", "2"+3);
+console.log("2 + '3' =", 2+ "3");
+console.log("2+3 =", 2+3);
 
 // Read chapter 4 in zyBooks: Compound Assignment Operators
 
