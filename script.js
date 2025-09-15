@@ -58,7 +58,19 @@ console.log("2+3 =", 2+3);
 //         - "Young" if age is between 13 and 35
 //         - "Aged" if age > 35
 // write code here
-
+let ageInput = prompt("Enter your age (number):");
+let age = parseInt(ageInput, 10);
+if (Number.isNaN(age)) {
+  console.log("Invalid age entered:", ageInput);
+} else {
+  if (age < 13) {
+    console.log("Child");
+  } else if (age <= 35) {
+    console.log("Young");
+  } else {
+    console.log("Aged");
+  }
+}
 
 // Task 4.2 — Switch statement
 // Create a variable let day = "Mon".
@@ -67,6 +79,22 @@ console.log("2+3 =", 2+3);
 //         - If it is "Sat" or "Sun", log "weekend".
 //         - For any other value, log "unknown".
 // write code here
+let day = "Mon";
+switch (day) {
+  case "Mon":
+  case "Tue":
+  case "Wed":
+  case "Thu":
+  case "Fri":
+    console.log("weekday");
+    break;
+  case "Sat":
+  case "Sun":
+    console.log("weekend");
+    break;
+  default:
+    console.log("unknown");
+}
 
 // Read Chapter 4 in zyBooks: Conditional (ternary) operator
 
