@@ -28,6 +28,12 @@ console.log("SCHOOL:", SCHOOL);
 // Task 3.1 — arithmetic basics
 // Given let x = 8, y = 3; log x+y, x-y, x*y, x/y, x%y.
 // write code here
+let x = 8, y=3;
+console.log("x + y = ",x+y);
+console.log("x - y = ",x-y);
+console.log("x * y = ",x*y);
+console.log("x / y = ",x/y);
+console.log("x % y = ",x%y);
 
 
 // Task 3.2 — number vs string
