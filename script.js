@@ -17,6 +17,8 @@ console.log("course (reassigned):", course);
 // NOTE: For now, keep the reassignment line commented so the file runs without errors.
 // const SCHOOL = "MyCollege";
 // SCHOOL = "OtherCollege"; // <-- Uncomment to see the error, then re-comment after testing
+const SCHOOL = "MyCollege";
+console.log("SCHOOL:", SCHOOL);
 
 
 // ==========================
