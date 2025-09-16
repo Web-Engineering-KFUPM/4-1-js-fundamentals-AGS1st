@@ -105,16 +105,28 @@ switch (day) {
 // Task 5.1 — for loop sum
 // TODO: Sum integers 1..10 with a for loop; display the result of total sum.
 // write code here
-
+let total = 0;
+for (let i = 1; i <= 10; i++) {
+  total += i;
+}
+console.log("Sum 1..10 =", total);
 
 // Task 5.2 — while loop
 // let t = 3; while(t > 0), decrement the value t variable in each iteration and display the result.
 // write code here
-
+let t = 3;
+while (t > 0) {
+  t--; // decrement each iteration
+  console.log("while loop t after decrement =", t);
+}
 
 // Read Chapter 4 in zyBooks: Do-While Loop
 // write code here
-
+let dd = 0;
+do {
+  console.log("do-while example dd =", dd);
+  dd++;
+} while (dd < 1);
 
 // =============================
 // TODO-6: FUNCTIONS (DECL, RETURN, ARROW)
@@ -123,12 +135,16 @@ switch (day) {
 // Task 6.1 — pure function + return
 // Make a function add(a,b){ return a+b; } display the result of add(2,5).
 // write code here
-
+function add(a, b) {
+  return a + b;
+}
+console.log("add(2,5) =", add(2, 5));
 
 // Task 6.2 — Arrow functions
 // Make an arrow function; const cube = n => n*n*n; cube(3)
 // write code here
-
+const cube = n => n * n * n;
+console.log("cube(3) =", cube(3));
 
 // =================================
 // TODO-7: SCOPE & GLOBAL OBJECT (ESSENTIALS)
@@ -138,6 +154,16 @@ switch (day) {
 // Declare var a = 1; let b = 2 inside a block { },  then try displaying both outside the block; observe differences.
 // write code here
 
+{  var varA = 1;
+  let letB = 2;
+  console.log("inside block varA =", varA, "letB =", letB);
+}
+console.log("outside block varA =", varA); // var is function/global scoped -> accessible outside the block
+try {
+  console.log("outside block letB =", letB); // letB is block-scoped -> reference error
+} catch (e) {
+  console.log("outside block letB error:", e.message);
+}
 
 // ==================
 // TODO-8: ARRAYS (CORE)
@@ -146,6 +172,12 @@ switch (day) {
 // Task 8.1 — create & mutate
 // TODO: let nums = [3,1,4]; then push(1), unshift(9), pop(); log final array and length.
 // write code here
-
+let nums = [3, 1, 4];
+nums.push(1);    // [3,1,4,1]
+nums.unshift(9); // [9,3,1,4,1]
+nums.pop();      // removes last -> [9,3,1,4]
+console.log("final nums =", nums);
+console.log("nums length =", nums.length);
 
 // End of manual — great job! Keep this file open and work task by task.
+console.log("All TODOs in script.js completed ✔");
